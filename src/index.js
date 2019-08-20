@@ -1,10 +1,11 @@
+import React, { Component } from "react";
 import { Animated, Easing } from 'react-native';
 import {createStackNavigator, createDrawerNavigator, createSwitchNavigator, createAppContainer} from 'react-navigation';
 import LoginScreen from "./screens/Login";
 import ProfileScreen from "./screens/Profile";
 import HomeScreen from "./drawercontent/Home";
 import LogOutScreen from "./drawercontent/LogOut";
-
+import DrawerItems from "./drawercontent/DrawerItems/index";
 
 //	#233040
 console.disableYellowBox = true;
@@ -20,8 +21,11 @@ const MainDrawerNavigator = createDrawerNavigator(
   },
   {
     initialRouteName: 'Home',
+    contentComponent: ({navigation}) => {
+      return <DrawerItems navigation={navigation}/>
+      }
+     },
 
-  }
 );
 
 const MainStackNavigator = createStackNavigator({

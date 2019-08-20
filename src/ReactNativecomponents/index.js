@@ -10,10 +10,10 @@
 
 'use strict';
 
-import Header from './components/Header';
-import LearnMoreLinks from './components/LearnMoreLinks';
-import Colors from './components/Colors';
-import DebugInstructions from './components/DebugInstructions';
-import ReloadInstructions from './components/ReloadInstructions';
+import Header from './nativecomponents/Header';
+import LearnMoreLinks from './nativecomponents/LearnMoreLinks';
+import Colors from './nativecomponents/Colors';
+import DebugInstructions from './nativecomponents/DebugInstructions';
+import ReloadInstructions from './nativecomponents/ReloadInstructions';
 
 export {Header, LearnMoreLinks, Colors, DebugInstructions, ReloadInstructions};
